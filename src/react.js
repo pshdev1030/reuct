@@ -19,6 +19,7 @@ export function render(vdom, container) {
 }
 
 export function createElement(tag, props, ...children) {
+  props = props || {};
   return {
     tag,
     props,
