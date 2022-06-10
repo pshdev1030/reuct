@@ -17,3 +17,11 @@ export function createDOM(node) {
 export function render(vdom, container) {
   container.appendChild(createDOM(vdom));
 }
+
+export function createElement(tag, props, ...children) {
+  return {
+    tag,
+    props,
+    children,
+  };
+}
